@@ -134,7 +134,7 @@ class main:
         self.len = len(self.words)-1
         self.driver.get("https://anime.eroterest.net")
         i = 0
-        while i < 10:
+        while i < time:
             self.search_bar = self.driver.find_element(By.XPATH, "/html/body/div[1]/div/div[3]/div[1]/div[1]/div/div/div[1]/div/div[1]/form/div/input")
             self.search_bar.clear()
             self.search_bar.send_keys(self.words[randint(0, self.len)])
